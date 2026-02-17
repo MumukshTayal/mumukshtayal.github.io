@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mumuksh Tayal — Research Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/theme.css" />
+
+  <!-- Theme script (early to prevent flash) -->
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">mt.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <button class="theme-toggle" aria-label="Toggle theme"></button>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-label">Research Student · IISc Bangalore</p>
+        <h1>Mumuksh Tayal</h1>
+        <p class="hero-description">
+          MTech (Research) student at the Robert Bosch Centre for Cyber-Physical Systems,
+          Indian Institute of Science, Bangalore. My research focuses on solving
+          Constrained Optimization problems using Offline Reinforcement Learning.
+        </p>
+        <hr class="hr-anim" />
+        <div class="hero-links">
+          <a href="https://github.com/MumukshTayal" class="hero-link" target="_blank">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/mumuksh-tayal-9802aa1b9/" class="hero-link" target="_blank">LinkedIn ↗</a>
+          <a href="https://scholar.google.com/citations?user=4d4NEc8AAAAJ&hl=en" class="hero-link" target="_blank">Google Scholar ↗</a>
+          <a href="mailto:mumukshtayal29@gmail.com" class="hero-link">Email ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">01 — About</p>
+        <h2>Background</h2>
+      </div>
+      <hr class="hr-anim fade-in" />
+      <div class="fade-in">
+        <p style="margin-bottom: 1.5rem;">
+          I'm a research student at the <strong>Indian Institute of Science (IISc), Bangalore</strong>,
+          working at the <strong>Robert Bosch Centre for Cyber-Physical Systems (RBCCPS)</strong>.
+          My research lies at the intersection of Reinforcement Learning, Optimization, and Safety —
+          specifically on developing frameworks for safe and performant Offline RL
+          that can handle hard, state-wise safety constraints.
+        </p>
+        <p style="margin-bottom: 1.5rem;">
+          Prior to IISc, I completed my BTech in Engineering with a minor in Computer Science from
+          <strong>IIT Gandhinagar</strong>. I've also worked as an R&D Intern at
+          <strong>SanDisk (Western Digital)</strong>, where I contributed to optimizing LLM inference
+          on edge devices — work that led to a U.S. Patent filing.
+        </p>
+        <p>
+          Beyond research, I'm passionate about high-performance computing, systems programming,
+          and competitive problem-solving. I secured AIR 204 in GATE (AI) 2024 and ranked
+          in the top 0.6% of JEE Advanced 2020.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">02 — Publications</p>
+        <h2>Research Papers</h2>
+      </div>
+      <hr class="hr-anim fade-in" />
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">EpiFlow: Epigraph-Guided Flow Matching for Safe and Performant Offline RL</span>
+          <span class="card-meta">ICML 2026</span>
+        </div>
+        <p class="card-description">
+          M. Tayal, M. Tayal. Devised an epigraph reformulation-based value function guided
+          Offline RL framework that co-optimizes agent policy for safety and performance,
+          maximizing reward while satisfying state-wise hard safety constraints at each step.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Submitted</span>
+          <span class="tag">Offline RL</span>
+          <span class="tag">Flow Matching</span>
+          <span class="tag">Safety</span>
+        </div>
+        <a href="https://arxiv.org/pdf/2602.08054" class="card-paper-link" target="_blank">Read Paper ↗</a>
+      </div>
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">V-OCBF: Value-Guided Offline Control Barrier Functions</span>
+          <span class="card-meta">TMLR · AAAI 2026</span>
+        </div>
+        <p class="card-description">
+          M. Tayal, M. Tayal, S. Kolathaya, R. Prakash. A value-guided framework that learns
+          actuation-aware, infinite-horizon safe Neural Control Barrier Functions from offline
+          demonstrations — producing deployable safety filters that satisfy hard, state-wise constraints.
+        </p>
+        <div class="card-tags">
+          <span class="tag">TMLR Submitted</span>
+          <span class="tag">AAAI Oral</span>
+          <span class="tag">Control Barrier Functions</span>
+          <span class="tag">Safety Filters</span>
+        </div>
+        <a href="https://arxiv.org/pdf/2512.10822" class="card-paper-link" target="_blank">Read Paper ↗</a>
+      </div>
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">RISE: Robust Imitation through Stochastic Encodings</span>
+          <span class="card-meta">IROS 2025</span>
+        </div>
+        <p class="card-description">
+          M. Tayal, M. Tayal, R. Prakash. A variational, parameter-conditioned imitation-learning
+          framework that encodes noisy/stochastic obstacle and goal sensor readings into a probabilistic
+          latent space to improve robustness of offline-learned models.
+        </p>
+        <div class="card-tags">
+          <span class="tag">LeaPRiDE Workshop</span>
+          <span class="tag">Imitation Learning</span>
+          <span class="tag">Variational Inference</span>
+        </div>
+        <a href="https://openreview.net/forum?id=GEexdUmA67" class="card-paper-link" target="_blank">Read Paper ↗</a>
+      </div>
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">Multi-Instance DNN Inferencing on Heterogeneous Edge Accelerators</span>
+          <span class="card-meta">HiPC 2024</span>
+        </div>
+        <p class="card-description">
+          M. Tayal, Y. Simmhan. Investigated the unexplored paradigm of heterogeneous mobile
+          accelerators, evaluating multi-instance DNN inference performance on NVIDIA Jetson AGX Orin
+          to understand resource congestion between CUDA cores, Tensor Cores, and DLAs under concurrent workloads.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Best Student Paper</span>
+          <span class="tag">Edge Computing</span>
+          <span class="tag">DNN Inference</span>
+          <span class="tag">HPC</span>
+        </div>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10898439" class="card-paper-link" target="_blank">Read Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">03 — Experience</p>
+        <h2>Where I've Worked</h2>
+      </div>
+      <hr class="hr-anim fade-in" />
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <span class="timeline-title">MTech (Research) Student</span>
+          <span class="timeline-date">Aug 2024 — Present</span>
+        </div>
+        <p class="timeline-subtitle">RBCCPS, Indian Institute of Science, Bangalore</p>
+        <p class="timeline-description">
+          Conducting research on Constrained Optimization using Offline Reinforcement Learning
+          under Prof. Ravi Prakash. Developing frameworks (EpiFlow, V-OCBF, RISE) for safe and
+          performant offline RL with hard safety constraints.
+        </p>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <span class="timeline-title">Teaching Assistant — Imitation Learning for Robotics</span>
+          <span class="timeline-date">Jan 2026 — Present</span>
+        </div>
+        <p class="timeline-subtitle">Indian Institute of Science, Bangalore</p>
+        <p class="timeline-description">
+          Tutoring the course on topics covering Offline Reinforcement Learning.
+          Collaborating with 2 other TAs on designing problem statements and course curriculum slides.
+        </p>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <span class="timeline-title">Research & Development Intern</span>
+          <span class="timeline-date">Feb 2024 — Jun 2024</span>
+        </div>
+        <p class="timeline-subtitle">SanDisk (Western Digital), Bangalore</p>
+        <p class="timeline-description">
+          Worked on an end-to-end software framework for enhanced inference latencies of LLMs on
+          consumer-grade edge devices — resulting in a U.S. Patent filing. Achieved over 60% reduction
+          in latency associated with loading model weights. Worked with low-level HPC toolkits
+          including SPDK for kernel bypass, and implemented deep learning architecture for predictive
+          memory fetching across model components.
+        </p>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-header">
+          <span class="timeline-title">Research Student — HPC & Edge ML</span>
+          <span class="timeline-date">Aug 2024 — Dec 2024</span>
+        </div>
+        <p class="timeline-subtitle">CDS, Indian Institute of Science, Bangalore</p>
+        <p class="timeline-description">
+          Under Prof. Yogesh Simmhan, investigated heterogeneous mobile accelerators and explored
+          performance behavior of multi-instance DNN inferencing on NVIDIA Jetson AGX Orin.
+          Awarded Best Student Paper Presentation at HiPC 2024.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">04 — Projects</p>
+        <h2>Selected Work</h2>
+      </div>
+      <hr class="hr-anim fade-in" />
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">Safe & Robust Offline Reinforcement Learning</span>
+          <span class="card-meta">Jan 2025 — Present</span>
+        </div>
+        <p class="card-description">
+          Research under Prof. Ravi Prakash at RBCCPS, IISc. Devised an epigraph reformulation-based
+          Offline RL framework (EpiFlow) for co-optimizing safety and performance. Developed V-OCBF
+          for learning deployable safety filters from offline data. Proposed RISE — a variational
+          imitation-learning framework for robust policy learning under sensor noise.
+        </p>
+        <div class="card-tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">JAX</span>
+          <span class="tag">Offline RL</span>
+          <span class="tag">Safety</span>
+          <span class="tag">Flow Matching</span>
+        </div>
+      </div>
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">Heterogeneous DNN Inference on Edge Platforms</span>
+          <span class="card-meta">Aug — Dec 2024</span>
+        </div>
+        <p class="card-description">
+          Research under Prof. Yogesh Simmhan at CDS, IISc. Evaluated multi-instance DNN inferencing
+          on NVIDIA Jetson AGX Orin, exploring resource congestion between co-located accelerators —
+          CUDA Cores, Tensor Cores, and DLAs — under concurrent workloads. Motivated intelligent
+          workload-aware load-allocation frameworks.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">NVIDIA Jetson</span>
+          <span class="tag">TensorRT</span>
+          <span class="tag">Edge ML</span>
+        </div>
+      </div>
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">Fixed Parameter Tractability for Vertex Cover</span>
+          <span class="card-meta">Jan — Apr 2024</span>
+        </div>
+        <p class="card-description">
+          Project under Prof. Balagopal Komarath at IIT Gandhinagar. Contributed a novel algorithm
+          to the SageMath repository to reduce time complexity of finding Vertex Cover size.
+          Developed a fixed-parameter tractable algorithm that attempts to solve the Vertex Cover
+          problem in polynomial time for a given parameter k.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SageMath</span>
+          <span class="tag">Graph Theory</span>
+          <span class="tag">FPT Algorithms</span>
+        </div>
+      </div>
+
+      <div class="card fade-in" style="display:block;">
+        <div class="card-header">
+          <span class="card-title">Online Judge Platform — IIT Gandhinagar</span>
+          <span class="card-meta">Jan — Apr 2024</span>
+        </div>
+        <p class="card-description">
+          Full-stack online judge for competitive programming under Prof. Neeldhara Misra.
+          Built with Golang/GoFiber backend and ReactJS+Vite frontend. Designed a separate
+          "judge server" for containerized, secure user code execution using Docker, with
+          parallel submission processing via goroutines and channels.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Golang</span>
+          <span class="tag">React</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GoFiber</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">05 — Skills</p>
+        <h2>Technologies & Expertise</h2>
+      </div>
+      <hr class="hr-anim fade-in" />
+      <div class="skills-grid fade-in">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python (NumPy, Pandas)</li>
+            <li>Golang</li>
+            <li>C / C++</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>ML & Research</h3>
+          <ul>
+            <li>PyTorch</li>
+            <li>JAX</li>
+            <li>Offline RL / Imitation Learning</li>
+            <li>Control Barrier Functions</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Systems & Tools</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Linux</li>
+            <li>Docker</li>
+            <li>xNVMe / SPDK</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Coursework</h3>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Bayesian Learning</li>
+            <li>Optimization Methods</li>
+            <li>Control Theory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">06 — Contact</p>
+        <h2>Get in Touch</h2>
+      </div>
+      <hr class="hr-anim fade-in" />
+      <div class="fade-in">
+        <p style="margin-bottom: 2rem;">
+          I'm always open to discussing research collaborations, new ideas in safe RL and
+          constrained optimization, or opportunities to contribute to impactful work.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:mumukshtayal29@gmail.com" class="contact-link">Email</a>
+          <a href="https://github.com/MumukshTayal" class="contact-link" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/mumuksh-tayal-9802aa1b9/" class="contact-link" target="_blank">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=4d4NEc8AAAAJ&hl=en" class="contact-link" target="_blank">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built with care · Mumuksh Tayal · 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>
